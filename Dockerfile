@@ -1,8 +1,8 @@
 FROM node:11.1-alpine
 
-COPY . /project/apidoc
+COPY . /project/swagger-ui
 
-WORKDIR /project/apidoc
+WORKDIR /project/swagger-ui
 
 RUN npm install
 
