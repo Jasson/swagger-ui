@@ -7,7 +7,6 @@ app.use('/', express.static('public'));
 app.get('/getDocs', function (req, res) {
     let docFileInfos = [];
     let pathDir = __dirname + '/public/docs';
-    console.log(pathDir)
     try {
         let fileNames = fs.readdirSync(pathDir);
         fileNames.forEach(function (fileName) {
