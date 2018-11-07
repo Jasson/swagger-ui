@@ -1,0 +1,9 @@
+version: '3'
+services:
+  swagger-ui:
+    build: .
+    container_name: swagger-ui
+    ports:
+      - '8080:8080'
+    volumes:
+      - /opt/vol/swagger-ui/docs:/project/swagger-ui/public/docs
